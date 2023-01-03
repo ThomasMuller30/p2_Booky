@@ -1,0 +1,928 @@
+/* Général */
+
+* {
+    box-sizing:border-box;
+    font-family: raleway, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Icone */
+
+.fas{
+    color: #0065fc;
+}
+
+.fa-map-marker-alt{
+    color: black;
+}
+
+.fa-chart-line{
+    color: black;
+}
+
+.fa-star-2{
+    color: #F2F2F2;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    display: flex;
+    padding: 50px;
+    border-top: 2px solid transparent;
+}
+
+nav ul li a:hover{
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+header img{
+    max-width: 150px;
+    padding: 15px;
+}
+
+/* Main */
+
+main{
+    width: 100%;
+}
+
+h1{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+div.container{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 70px;
+}
+
+div#entete{
+    width: 100%;
+}
+
+#slogan{
+    margin: 15px 0;
+}
+
+
+   /* Formulaire */
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+form label{
+    position: absolute;
+    left: -999px;
+}
+
+form i{
+    background-color: #F2F2F2;
+    padding: 14px 15px 16px 15px;
+    border-radius: 15px 0 0 15px;
+    margin: 0;
+}
+
+form #searchbar{
+    height: 46px;
+    width: 300px;
+    border: 2px #F2F2F2 solid;
+    margin: 0;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+form #searchbar::placeholder{
+    font-weight: bold;
+    color: #000;
+    font-size: 15px;
+}
+
+form #button{
+    height: 46px;
+    color: white;
+    font-weight: bold;
+    background-color: #0065fc;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+#button i{
+    display: none;
+}
+
+#button input{
+        background-color: transparent;
+        border: none;
+        color: white;
+}
+
+    /* Filtres */
+
+#filtres{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+#filtres ul{
+    display: flex;
+}
+
+#filtres ul li{
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#filtres .fas{
+    width: 38.5px;
+    height: 38.5px;
+    position : relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filtres .filtre{
+    font-size: 1em;
+    padding: 8px 8px 8px 43px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    border-left: 0px solid transparent;
+    margin-left: -35px;
+}
+
+#filtres li:hover{
+    color: #0065fc;
+}
+
+#filtres li:hover i{
+    background-color: #0065fc;
+    color: white;
+}
+
+#filtres ul li i{
+    padding: 5px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+}
+
+#filtres h3{
+    padding: 0;
+}
+
+#info{
+    display: flex;
+    margin: 15px 0;
+}
+
+#info i{
+    width: 28px;
+    padding: 5px;
+    margin: 5px 0;
+    border: #e3e3e3 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#info span{
+    padding: 10px;
+}
+
+    /* Hébergements */
+
+#hebergements{
+display: flex;
+width: 100%;
+margin-bottom: 60px;
+}
+
+        /* Section */
+
+#center{
+    background-color: #F2F2F2;
+    padding: 25px;
+    border-radius: 25px;
+    margin-right: 25px;
+    flex: 1;
+}
+
+section h2,h3{
+    padding-left: 25px;
+}
+
+.containers h3{
+    padding-left: 0;
+}
+
+section #articles{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .articles{
+    width: 33%;
+    padding: 25px;
+}
+
+#center .cadres{
+    background-color: white;
+    border-radius: 20px;
+}
+
+section img{
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    height: 150px;
+}
+
+#articles .articles .cadres h3{
+    font-size: 1em;
+}
+
+#articles .articles .cadres p{
+    font-size: 0.9em;
+}
+
+#articles .articles .cadres .stars i{
+    font-size: 0.9em;
+}
+
+.containers{
+    padding: 0 15px 15px 15px;
+}
+
+.containers p{
+    margin: 5px 0;
+}
+
+        /* Aside */
+
+aside{
+    width: 33%;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+aside #populaires{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+aside a{
+    display: flex;
+    width: 100%;
+}
+aside a img{
+    width: 50%;
+    border-radius: 20px 0 0 20px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.articles_populaire{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 25px;
+    height: 175px;
+}
+
+.articles_populaire p{
+    margin-bottom: 20px;
+}
+
+aside a .containers{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+aside a .containers .texte h3{
+    font-size: 1em;   
+}
+
+aside a .containers .texte p{
+    font-size: 0.9em;
+}
+
+aside a .containers .stars{
+    font-size: 0.9em;
+}
+
+    /* Activités */
+
+#activites{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+         /* activites */
+
+#activites h2{
+    width: 100%;
+    padding: 0;
+}
+
+#articles_activites {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteneur{
+    padding: 20px 20px 20px 0;
+    height: 100%;
+    width: 25%;
+}
+
+.activite
+{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteneur .activite .integrale{
+    flex: 1;
+    height: 100%;
+    box-shadow: 0 8px 12px #e3e3e3;
+    border-radius: 15px;
+}
+
+.conteneur .activite .integrale img{
+    height: 91%;
+}
+
+.conteneur .activite .integrale h3{
+    padding: 0;
+}
+
+.conteneur .activite .grand{
+    height: calc(60% - 10px);
+    box-shadow: 0 8px 12px #e3e3e3;
+    border-radius: 15px;
+}
+
+.conteneur .activite .grand img{
+    height: 85%;
+}
+
+.conteneur .activie .grand .containers{
+    height: 10%;
+}
+
+.conteneur .activite .petit{
+    height: calc(40% - 10px);
+    box-shadow: 0 8px 12px #e3e3e3;
+    border-radius: 15px;
+}
+
+#activites .activite .petit img{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    padding: 0;
+}
+
+.activite img{
+    padding:0;
+}
+
+#activites .activite .containers{
+    height: 20%;
+    
+}
+
+#activites h3{
+    padding: 4px 3px 3px 3px;
+    font-size: 0.9em;
+}
+
+/* Footer */
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px 70px;
+}
+
+footer > div{
+    width: 33%;
+}
+
+footer li{
+    margin-top: 15px;
+}
+
+footer h3{
+    padding: 0;
+}
+
+
+/*   Pour les tablette  */
+@media screen and (max-width:992px) {
+
+div.container{
+    margin: 40px;
+}
+   
+/* header */
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    header img{
+        min-width: 20%;
+    }
+
+    header nav{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    nav ul li:hover{
+        border-bottom: 3px solid #0065fc;
+    }
+
+    nav ul li a{
+        border-top: none;
+        font-size: 1em;
+        padding: 30px;
+    }
+
+    nav ul li a:hover{
+        border-top: none;
+    }
+
+    /* main */
+    main h1{
+        text-align: center;
+    }
+
+    main #slogan{
+        text-align: center;
+    }
+    /* Form */
+
+    form{
+        width: 100%;
+        height: 70px;
+    }
+
+    form.formulaire i{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 28px;
+    }
+
+    form #button input{
+        display: none;
+    }
+
+    form #button{
+        height: 100%;
+        padding: 0;
+    }
+
+    form #button i{
+        color: white;
+        background-color: transparent;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    form #searchbar{
+        width: 90%;
+        height: 100%;
+    }
+
+    form #button #rechercher{
+        display: none;
+    }
+
+    /* filtres */
+    #filtres {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #filtres .filtre{
+        font-size: 0.7em;
+        padding: 10px 10px 10px 43px;
+    }
+
+    /* center */
+    #hebergements{
+        height: 1000px;
+    }
+
+    #center #articles .articles{
+        width: 50%;
+    }
+
+    /* aside */
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    #populaire{
+        height: 100%;
+    }
+
+    aside a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside a img {
+        min-height: 50%;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        padding-bottom: 0;
+    }
+
+    .articles_populaire{
+        margin-bottom: 0;
+        height: 30%;
+    }
+
+    .articles_populaire .containers{
+        height: 50%;
+        padding: 2px 20px 20px 20px;
+        width: 100%;
+    }
+
+    /* activités */
+
+
+    
+    #articles_activites{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    #articles_activites .conteneur{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #activites h2{
+        margin-bottom: 40px;
+    }
+
+    #articles_activites{
+        height: 100%;
+    }
+
+    #articles_activites .conteneur{
+        height: 100%;
+        padding: 0 20px 0 20px;
+    }
+
+    #articles_activites .conteneur .activite .integrale{
+        max-height: 400px;
+        margin-bottom: 50px;
+        box-shadow: 0 8px 12px #e3e3e3;
+    }
+
+    #articles_activites .conteneur .activite .grand{
+        max-height: 400px;
+        margin-bottom: 50px;
+        box-shadow: 0 8px 12px #e3e3e3;
+    }
+
+    #articles_activites .conteneur .activite .petit{
+        max-height: 400px;
+        margin-bottom: 50px;
+        box-shadow: 0 8px 12px #e3e3e3;
+    }
+
+    #articles_activites .conteneur .activite .integrale a img{
+        max-height: 250px;
+    }
+
+    #articles_activites .conteneur .activite .grand a img{
+        max-height: 250px;
+    }
+
+    #articles_activites .conteneur .activite .petit a img{
+        max-height: 250px;
+    }
+
+}
+
+
+
+/*   Pour les mobiles  */
+@media screen and (max-width:767px) {
+
+div.container{
+    margin: 0;
+}
+
+#entete{
+    order: -2;
+}
+
+aside{
+    order: -1;;
+}
+    /* barre de recherche */
+
+    form{
+        padding: 0 20px 0 20px;
+        height: 50px;
+    }
+
+    form #searchbar{
+        margin-right: -30px;
+    }
+
+    form.formulaire i{
+        padding: 15px;
+    }
+
+    form #button{
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    form #button i{
+        justify-content: center;
+    }
+
+    /* filtres */
+
+    #filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filtres h3{
+        padding-left: 20px;
+    }
+
+    #filtres ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 7px ;
+    }
+
+    /* info */
+
+    #info{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    #info i{
+        padding: 5px 12px;
+    }
+
+    /* main */
+    
+    main{
+        padding: 0;
+    }
+
+    main h1{
+        text-align: start;
+        padding-left: 20px;
+    }
+
+    main #slogan{
+        text-align: start;
+        padding-left: 20px;
+    }
+
+    /* center */
+    
+    #hebergements{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    #center{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #center h2{
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    #center #articles {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #center #articles .articles {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    #center #articles .articles .cadres{
+        box-shadow: 0 8px 12px #e3e3e3;
+    }
+
+    #hebergements #center h3{
+        margin-top: 20px;
+    }
+
+    #center h3#plus{
+        padding: 0;
+        margin-top: 40px;
+    }
+
+
+    /* aside */
+
+    aside{
+        margin: 0 0 10px 0;
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+        order: -1;
+    }
+
+    .articles_populaire{
+        height: 30%;
+    }
+
+    .articles_populaire a{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articles_populaire a img{
+        border-radius: 20px 0 0 20px;
+        padding-bottom: 5px;
+        max-width: 50%;
+        max-height: 200px;
+    }
+
+    .articles_populaire .containers{
+        padding: 20px 20px 20px 9px;
+        max-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .articles_populaire .containers .stars{
+        display: flex;
+        margin-top: 45px;
+    }
+
+    /* activités */
+
+    #activites{
+        margin: 25px;
+    }
+
+    #activites h2{
+        margin-bottom: 35px;
+    }
+
+    #articles_activites{
+        height: 100%;
+    }
+
+    #articles_activites .conteneur{
+        height: 100%;
+        padding: 0;
+    }
+
+    #articles_activites .conteneur .activite .integrale{
+        max-height: 400px;
+        margin-bottom: 50px;
+        box-shadow: 0 8px 12px #e3e3e3;
+    }
+
+    #articles_activites .conteneur .activite .grand{
+        max-height: 400px;
+        margin-bottom: 50px;
+        box-shadow: 0 8px 12px #e3e3e3;
+    }
+
+    #articles_activites .conteneur .activite .petit{
+        max-height: 400px;
+        margin-bottom: 50px;
+        box-shadow: 0 8px 12px #e3e3e3;
+    }
+
+    #articles_activites .conteneur .activite .integrale a img{
+        max-height: 250px;
+    }
+
+    #articles_activites .conteneur .activite .grand a img{
+        max-height: 250px;
+    }
+
+    #articles_activites .conteneur .activite .petit a img{
+        max-height: 250px;
+    }
+    
+    /* footer */
+
+    footer{
+        display: block;
+        padding: 50px 35px;
+    }
+
+    footer div{
+        padding-bottom: 40px;
+    }
+
+    footer > div{
+        width: 100%;
+    }
+
+}
